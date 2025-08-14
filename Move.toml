@@ -1,0 +1,28 @@
+[package]
+name = "LendingContract"
+version = "1.0.0"
+authors = []
+
+[addresses]
+LendingContract = "4733658581be088fe23e99fce8a8de7e8fe975682f402c4394461521aa246706"  # Testnet deployment address
+std = "0x1"
+
+[dev-addresses]
+LendingContract = "0x123"  # For local development
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "testnet"
+subdir = "aptos-framework"
+
+[dependencies.AptosStdlib]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "testnet"
+subdir = "aptos-stdlib"
+
+[dependencies.MoveStdlib]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "testnet"
+subdir = "move-stdlib"
+
+[dev-dependencies]
